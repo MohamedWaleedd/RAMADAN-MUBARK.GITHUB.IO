@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RAMADAN</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+    font-size: 13pt;
+    background: saddlebrown;
+}
+::placeholder{
+  color: saddlebrown;
+}
+input{
+  border: 2px darkgoldenrod solid;
+  margin-left: 20px;
+  height: 30px;
+  border-radius: 20px;
+  color: goldenrod;
+  width: 85%;
+}
+input:focus{
+  transform: scale(1.1);
+  height: 25px;
+}
+.conatiner{
+  width: 70%;
+  float: left;
+  margin-left: 15%;
+  margin-top: 15%;
+  border: 2px solid goldenrod;
+  border-radius: 20px;
+  box-shadow: -2px 22px 0px 8px darkgoldenrod;
+}
+
+h3{
+  text-align: center;
+  color: goldenrod;
+  font-weight: 18pt;
+  font-size: 30px;
+}
+h5{
+  text-align: center;
+  color: gold;
+  font-weight: 18pt;
+  font-size: 20px;
+}
+#submit:hover{
+  background: goldenrod;
+  color: white;
+}
+#submit{
+  width: 85%;
+  height: 30px;
+  margin-left: 8%;
+  margin-right: 9%;
+  background-color: #fff;
+  color: saddlebrown;
+  border: 1.2px goldenrod solid;
+  border-radius: 30px;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+}
+    .footer {
+      justify-content: space-between;
+      margin-top: 200px;
+      font-size: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <header><h1>🌜</h1>
+  <h1></h1>
+  <h1>🌛</h1>
+  </header>
+  <div class="conatiner">
+    <h3>رمضان</h3>
+    <input type="text" name="name" id="name" placeholder="اكتب اسمك">
+    <br>
+    <button type="submit" id="submit" onclick="submit ()">!اضغط هنا</button>
+    
+    <br>
+    <h5 id="answer"></h5>
+  </div>
+  <script>
+    function submit() {
+      let name = document.getElementById("name").value
+let p = document.getElementById("answer")
+  localStorage.setItem("Name", name)
+  console.log(localStorage)
+  
+  p.textContent = " رمضان كريم يا " + name + "🌙🥳"
+}
+  </script>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+    <div class="footer">
+      <h4 style="color: white; margin-left: 120px;">©Copyright by Mohamed Waleed.</h4>
+    </div>
+</body>
+</html>
